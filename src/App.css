@@ -1,0 +1,104 @@
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+/* RESPONSE CARD ----------------------- */
+#response {
+  border-radius: 20px;
+  width: auto;
+  height: auto;
+  margin: 100px auto 100px auto;
+}
+#response:hover {
+  cursor: pointer;
+  box-shadow: 5px 5px 18px -2px #dfdfdf;
+}
+#response-photo {
+  border: 1px solid black;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  margin: 20px;
+}
+#response-content {
+  padding: 30px 20px;
+}
+#response-content h4 {
+  display: inline;
+  font-size: 150%;
+}
+#response-content h5 {
+  font-size: 100%;
+  margin-top: 10px;
+  width: 80%;
+}
+#response-bio {
+  width: 80%;
+  font-style: italic;
+}
+#response-close {
+  font-size: 80%;
+  display: inline;
+  color: grey;
+  float: right;
+}
+#response-close:hover {
+  cursor: pointer;
+  color: black;
+  font-size: 16px;
+}
+#response-msg-icon {
+  font-size: 50%;
+  vertical-align: middle;
+}
+
+#response-arrow {
+  display: inline;
+  float: right;
+}
+/* DETAILS ------------------------ */
+.details {
+  width: 25%;
+  height: 200px;
+  margin: 100px 0 0 auto;
+  text-align: center;
+}
+#project-details-card {
+  border-radius: 25px;
+}
+#project-details-arrow {
+  margin-left: 10px;
+  vertical-align: middle;
+  color: black;
+}
+
+#project-details-card:hover {
+  box-shadow: 5px 5px 18px -2px #dfdfdf;
+  cursor: pointer;
+}
+#project-details-img {
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+}
+#project-details-body {
+  padding: 5px;
+}
+
+/* DROPDOWN  -----------------------*/
+
+@media (max-width: 768px) {
+  #response {
+    font-size: 65%;
+  }
+  #response-content h5 {
+    width: 100%;
+  }
+  #response-photo {
+    width: 100px;
+    height: 100px;
+  }
+  #response-bio {
+    width: 100%;
+  }
+}
