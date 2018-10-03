@@ -3,6 +3,133 @@ body {
   margin: 0;
   padding: 0;
 }
+#root {
+  margin: 0;
+  padding: 0;
+}
+li {
+  text-decoration: none;
+  list-style: none;
+}
+/* MESSAGES */
+::-webkit-scrollbar {
+  width: 2.5px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: white;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #2668b5;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #438be0;
+}
+#test {
+  background-color: #f2f2f2;
+  height: 200px;
+}
+.message-history {
+  padding: 25px;
+}
+.messages-container {
+  height: 640px;
+  background-color: white;
+  overflow-y: scroll;
+}
+.message-me {
+  margin-top: 20px;
+}
+.mm-txt {
+  background-color: #74a8fc;
+  color: white;
+  border-radius: 10px;
+  max-width: 550px;
+  padding: 10px;
+  float: right;
+}
+.oth-txt {
+  background-color: #efefef;
+  border-radius: 10px;
+  max-width: 550px;
+  padding: 10px;
+  float: left;
+}
+#mm-img-container {
+  height: 50px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+#mm-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+#oth-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.message-input-row {
+  border-top: 1px solid #e8e9ea;
+  margin-top: 15px;
+  background-color: #ededed;
+}
+#message-form textarea {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+@media (max-width: 780px) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  .messages-container {
+    height: 550px;
+  }
+  .message-history {
+    padding: 10px;
+  }
+  .message-me {
+    font-size: 11px;
+    margin-top: 7.5px;
+  }
+  .mm-txt {
+    max-width: 700px;
+    padding: 5px;
+  }
+  #mm-img {
+    margin-left: -20px;
+    width: 35px;
+    height: 35px;
+  }
+  #oth-img {
+    margin-right: 20px;
+    width: 35px;
+    height: 35px;
+  }
+  @media (max-width: 360px) {
+    .messages-container {
+      height: 400px;
+    }
+  }
+}
+/* NAVBAR */
+#navbar {
+  width: 100%;
+}
+#nav-phone {
+  display: none;
+}
+#navbarNavDropdown {
+  margin-left: 55%;
+}
+.navbar-brand {
+  margin-left: 15%;
+}
 /* RESPONSE CARD ----------------------- */
 #response {
   border-radius: 20px;
@@ -88,6 +215,13 @@ body {
 /* DROPDOWN  -----------------------*/
 
 @media (max-width: 768px) {
+  #nav-phone {
+    display: inline-block;
+    margin-left: 80%;
+  }
+  #nav-not-phone {
+    display: none;
+  }
   #response {
     font-size: 65%;
   }
