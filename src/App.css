@@ -11,6 +11,53 @@ li {
   text-decoration: none;
   list-style: none;
 }
+/* Project Card */
+#project-card {
+  border-radius: 20px;
+  margin-top: 100px;
+  border: 0.5px solid grey;
+}
+#project-img {
+  border-radius: 20px 0 0 20px;
+  width: 100%;
+  height: 370px;
+}
+.project-content {
+  margin-left: 30px;
+  margin-top: 40px;
+}
+#project-type {
+  margin-top: 60px;
+}
+.project-content h6 {
+  margin-top: 90px;
+}
+@media (max-width: 750px) {
+  #project-img {
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    height: 270px;
+  }
+  .project-content h2 {
+    font-size: 20px;
+  }
+  #project-type {
+    margin-top: 10px;
+    font-size: 15px;
+  }
+  #project-location {
+    font-size: 15px;
+  }
+  .project-content h6 {
+    margin-top: 50px;
+    font-size: 12px;
+  }
+  .project-content {
+    height: 200px;
+    margin: 20px 0 0 0;
+    text-align: center;
+  }
+}
 /* MESSAGES */
 ::-webkit-scrollbar {
   width: 2.5px;

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 
 import Client_Response from "./components/Client_Response";
+import MyProjectCard from "./components/MyProjectCard";
 import ProjectDetails from "./components/ProjectDetails";
 import ProjectDropdown from "./components/ProjectDropdown";
 import NavBar from "./components/NavBar";
@@ -24,7 +25,19 @@ class App extends Component {
         <MessagesContainer />
       </div>
     );
-    return <div className="App">{messagesComponent}</div>;
+    return (
+      <div className="App">
+        <div className="row">
+          <NavBar />
+          <div className="col-md-2" />
+          <div className="col-md-8">
+            <MyProjectCard />
+            <MyProjectCard />
+          </div>
+          <div className="col-md-2" />
+        </div>
+      </div>
+    );
   }
 }
 
