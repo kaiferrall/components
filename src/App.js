@@ -6,6 +6,7 @@ import MyProjectCard from "./components/MyProjectCard";
 import ProjectDetails from "./components/ProjectDetails";
 import ProjectDropdown from "./components/ProjectDropdown";
 import NavBar from "./components/NavBar";
+import StairsCounter from "./components/StairsCounter";
 import MessagesContainer from "./components/Messages/MessagesContainer";
 
 class App extends Component {
@@ -31,8 +32,7 @@ class App extends Component {
           <NavBar />
           <div className="col-md-2" />
           <div className="col-md-8">
-            <MyProjectCard />
-            <MyProjectCard />
+            <StairsCounter />
           </div>
           <div className="col-md-2" />
         </div>
